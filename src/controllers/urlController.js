@@ -100,7 +100,7 @@ const getUrl = async function (req, res) {
         }
     }
     catch (err) {
-        console.log(error)
+        console.log(err)
         return res.status(500).send({ status: true, message: err.message })
     }
 }
